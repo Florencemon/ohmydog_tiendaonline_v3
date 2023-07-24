@@ -1,8 +1,5 @@
-# ohmydog_tienda_online
-PreEntrega02-Chirino-DWeb
-
 # OHMYDOG_tienda_online
-PreEntrega02-Chirino-DWeb
+PreEntrega03-Chirino-DWeb
 
 ## Table of Contents
 1. [General Info](#general-info)
