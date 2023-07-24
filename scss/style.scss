@@ -67,6 +67,14 @@ $border-color_2: #eb95a0;
               background-position: 0 50%;
        }
 }
+
+@mixin boton($fondo, $letra) {
+       extend %boton;
+       background: $fondo;
+       color: $letra;
+     }
+
+     
 /*-SERVICES-*/
 html {
        font-size: 62.5%;
