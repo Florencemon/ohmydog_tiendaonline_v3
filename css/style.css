@@ -1369,15 +1369,16 @@ li::before {
 	height: auto;
 	border-radius: 10px;
 	color: #fff;
+  text-transform: uppercase;
   text-shadow: 2px 2px 1px #9c336a;
 	font-size: 1.5rem;
 }
 
 .back{
   background: #cedce7;
-  background: -webkit-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
-  background: -o-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
-  background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+  background: -webkit-linear-gradient(45deg,  #7a3659 0%,#ab5d85 100%);
+  background: -o-linear-gradient(45deg,  #6f2049 0%,#ab5d85 100%);
+  background: linear-gradient(45deg,  #6f2049 0%,#ab5d85 100%);
 }
 
 .front:after{
@@ -1456,7 +1457,7 @@ li::before {
 }
 
 .front .inner p{
-  font-size: 5rem;
+  font-size: 3.5rem;
   font-family: "Boogaloo" ;
   margin-bottom: 2rem;
   position: relative;
