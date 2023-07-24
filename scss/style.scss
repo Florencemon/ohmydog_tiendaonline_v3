@@ -68,13 +68,13 @@ $border-color_2: #eb95a0;
        }
 }
 
-@mixin boton($fondo, $letra) {
-       extend %boton;
-       background: $fondo;
-       color: $letra;
-     }
+@mixin boton($color_1, $font-family_1) {
+       extend: $background-color_1;
+       background: $color_1;
+       color: $font-family_1;
+}
 
-     
+
 /*-SERVICES-*/
 html {
        font-size: 62.5%;
