@@ -123,7 +123,7 @@ body {
 }
 
 .nav__banner__services {
-  background-image: url(../IMG/cat2.jpg);
+  background-image: url(../IMG/cat2.png);
 }
 
 .nav__banner__about {
@@ -131,7 +131,7 @@ body {
 }
 
 .nav__banner__contact {
-  background-image: url(../IMG/dog04.png);
+  background-image: url(../IMG/dog04.jpeg);
 }
 
 .nav__titulo__container {
@@ -269,6 +269,33 @@ body {
   margin: 0;
 }
 
+.parrafo__service {
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.5em;
+  color: #000000;
+  text-align: center; 
+  flex: 1;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin: 0;
+  text-align: justify; 
+  display: block; 
+  width: 100%; 
+}
+
+.parrafo__service strong {
+  font-size: 150%;
+  font-weight: bold;
+  color: #6f2049;
+}
+.parrafo__service strong.max{
+  font-size: 200%;
+  font-weight: bold;
+  
+}
+
 .faqs__content{
   font-size:3rem;
 }
@@ -313,6 +340,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #ffffff;
 }
 
 .my__button:hover, .my__button__mail:hover {
@@ -344,70 +372,73 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 1300%;
 }
-.seccion__texto__color img {
-  width: 600px;
-  object-fit: cover;
-}
+
 
 .seccion__texto2{
-  height: 650px;
-  padding: 4%;
-  padding-bottom: 4%;
+  height: 900%;
+  padding: 2%;
+  padding-bottom: 5%;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(../IMG/turtleimage.png);
-  background-position: right bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.seccion__texto2 img {
-  width: 600px;
+  background: rgb(236, 164, 181);
  
-  object-fit: cover;
 }
+/*
+.seccion__texto2 img {
+  width: 600px;  
+  object-fit: cover;
+}*/
 
 .seccion__texto3{
-  height: 650px;
+   min-height: 700px; 
   padding: 4%;
   padding-bottom: 4%;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(../IMG/doggiimage.jpg);
-  background-position: right bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background:rgb(237, 161, 180);
 }
 
 .seccion__texto3 img {
-  width: 600px;
- 
+  width: 100%;
+  height: 400px;
   object-fit: cover;
 }
 
 .seccion__texto4{
-  height: 650px;
+  height: 750px;
   padding: 4%;
   padding-bottom: 4%;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(../IMG/kittyimage.jpg);
-  background-position: left bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: rgb(206, 227, 194);
+  
 }
 
 .seccion__texto4 img {
   width: 600px;
   object-fit: cover;
 }
+
+
+.seccion__texto5 {
+  /* height: 700px;   */
+  padding: 4%;
+  padding-bottom: 4%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(237, 161, 180);
+}
+
 
 
 .seccion__texto__color {
@@ -534,8 +565,10 @@ body {
 .img__aboutus {
   max-width: 100%;
   height: auto;
-  max-height: 25rem;
+  max-height: 100rem;
+  
 }
+
 .seccion__epigrafe__video {
   padding-bottom: 2rem;
 }
@@ -711,7 +744,48 @@ a iconify-icon:hover {
   display: block;
   padding-left: 10%;
   padding-right: 10%;
+  
 }
+
+.carousel-item img {
+  padding-top: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+  height: 600px;
+  width: 800px;
+  object-fit: cover;
+  
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.sr-only {
+  position: flex;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.carousel-indicators li {
+  background-color: rgba(255, 255, 255, 0.5); /* Color de fondo del indicador */
+  border: 1px solid rgba(0, 0, 0, 0.5); /* Borde del indicador */
+  border-radius: 50%; /* Forma redondeada */
+  width: 12px;
+  height: 12px;
+  margin: 5px;
+}
+ 
 
 .form__labels, .form__labels__color {
   font-size: 2em;
@@ -719,6 +793,8 @@ a iconify-icon:hover {
   color: #8d285c;
   font-weight: bold;
 }
+
+
 
 .form__check {
   font-size: 1.2em;
@@ -999,13 +1075,8 @@ li::before {
   .parrafo__card {
     font-size: 3rem;
   }
-  .img__aboutus {
-    
-    height: 70%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-  }
+
+  
   .form__labels, .form__labels__color {
     font-size: 2em;
   }
@@ -1291,12 +1362,58 @@ li::before {
     }
   }
 
+  .carousel {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .carousel-continuous {
+    display: flex;
+    animation: slideToLeft 25s linear infinite;
+    
+     }
+  
+     .carousel-inner {
+      width: 100%; 
+      overflow: hidden;
+    }
+
+  .carousel-continuous h4 {
+    width: 100%;
+    height: auto;
+    margin-right: 1rem; 
+  }
+  
+  @keyframes slideToLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+ 
+ 
+  .carousel-item {
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
 #activo:hover{
   text-decoration: overline #8d285c;
 }
 
 .spikes {
   position: relative; 
+}
+
+.carousel-indicators{
+  color: transparent;
 }
 
 .spikes::after {
@@ -1368,14 +1485,13 @@ li::before {
 	min-height: 280px;
 	height: auto;
 	border-radius: 10px;
-	color: #fff;
-  text-transform: uppercase;
-  text-shadow: 2px 2px 1px #9c336a;
+	color: #fff; 
 	font-size: 1.5rem;
+  
 }
 
 .back{
-  background: #cedce7;
+  background: #fff;
   background: -webkit-linear-gradient(45deg,  #7a3659 0%,#ab5d85 100%);
   background: -o-linear-gradient(45deg,  #6f2049 0%,#ab5d85 100%);
   background: linear-gradient(45deg,  #6f2049 0%,#ab5d85 100%);
@@ -1457,18 +1573,19 @@ li::before {
 }
 
 .front .inner p{
-  font-size: 3.5rem;
+  font-size: 1.8rem;
   font-family: "Boogaloo" ;
   margin-bottom: 2rem;
   position: relative;
+  color:transparent;
 }
 
 .front .inner p:after{
   content: '';
-  width: 4rem;
+  width: 2rem;
   height: 2px;
   position: absolute;
-  background: #C6D4DF;
+  background: #ffffff7d;
   display: block;
   left: 0;
   right: 0;
@@ -1513,10 +1630,11 @@ li::before {
 
 
 .front .inner span{
-  color: #8d285c;
-  font-family: 'Montserrat';
-  font-size: 2rem;
-  text-shadow: 1px 1px 1px #fff;
+  color: #ffffff9b;
+  text-transform: uppercase;
+  font-family: 'Boogaloo';
+  font-size: 3.5rem;
+  /*text-shadow: 1px 1px 1px #fff;*/
 }
 
 @media screen and (max-width: 64rem){
